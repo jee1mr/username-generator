@@ -13,7 +13,13 @@
 		<div class="bg-image"></div>
 		<form onsubmit="event.preventDefault()">
 			<label for="name">what's your name?</label>
-			<input id="name" type="text" name="name" autocomplete="off" />
+			<input
+				id="name"
+				type="text"
+				name="name"
+				autocomplete="off"
+				placeholder="e.g: sriram"
+			/>
 			<input
 				id="username"
 				type="text"
@@ -21,7 +27,6 @@
 				autocomplete="off"
 				readonly="readonly"
 				disabled="disabled"
-				placeholder="e.g: sriram"
 			/>
 			<button onclick="resetForm()" id="reset-btn">reset</button>
 			<button onclick="generate()" id="generate-btn">generate</button>
