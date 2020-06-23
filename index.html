@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>username generator</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" type="text/css" href="app.css" />
+	</head>
+
+	<body>
+		<form onsubmit="event.preventDefault()">
+			<label for="name">what's your name?</label>
+			<input id="name" type="text" name="name" autocomplete="off" />
+			<input
+				id="username"
+				type="text"
+				name="username"
+				autocomplete="off"
+				readonly="readonly"
+				disabled="disabled"
+			/>
+			<button onclick="resetForm()" id="reset-btn">reset</button>
+			<button onclick="generate()" id="generate-btn">generate</button>
+		</form>
+		<script type="text/javascript" src="app.js"></script>
+	</body>
+</html>
